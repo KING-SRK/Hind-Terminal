@@ -1,0 +1,116 @@
+.world-map-section {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.world-map {
+  width: 1020px;
+  height: 100%;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/home/worldmap.png");
+  background-size: contain; /* 👈 better for map */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.world-map h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.company-details {
+  width: 100%;
+  display: flex;
+  margin: 3rem 0;
+}
+
+.detail-card {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.detail-card h1 {
+  color: #fea22a;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.detail-card p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1024px) {
+  .world-map {
+    padding: 70px 12px;
+  }
+  .world-map h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .company-details {
+    flex-wrap: wrap;
+  }
+
+  .detail-card {
+    flex: 0 0 50%;
+    margin-bottom: 20px;
+  }
+
+  .detail-card h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .detail-card p {
+    font-size: 13px;
+  }
+
+  .detail-card:last-child {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .world-map {
+    background-size: cover;
+  }
+  .company-details {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .detail-card {
+    width: 100%;
+    flex: none;
+    margin-bottom: 15px;
+  }
+
+  .detail-card h1 {
+    font-size: 26px;
+  }
+
+  .detail-card {
+    margin-bottom: 0;
+  }
+
+  .detail-card:last-child {
+    flex: none;
+    margin-bottom: 0;
+  }
+
+  .world-map h2 {
+    font-size: 20px;
+  }
+}

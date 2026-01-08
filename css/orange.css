@@ -1,0 +1,374 @@
+.orange-section {
+  min-height: 120vh;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/about/mission-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 48px 0 0;
+  color: #fff;
+}
+
+.white-section {
+  padding-bottom: 48px;
+}
+
+.orange-heading {
+  width: 80%;
+  text-align: center;
+  margin: 0 144px 48px;
+}
+
+.orange-heading h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.orange-heading p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.service-details {
+  display: flex;
+  align-items: center;
+}
+
+.service-details2 {
+  display: flex;
+  align-items: center;
+}
+
+.service-img-container {
+  width: 50%;
+}
+
+.service-img-container2 {
+  width: 50%;
+}
+
+.service-img-container img {
+  width: 100%;
+  border-radius: 0 100px 100px 0;
+}
+
+.service-img-container2 img {
+  width: 100%;
+  border-radius: 100px 0 0 100px;
+}
+
+.service-text-container {
+  width: 50%;
+  padding: 60px;
+}
+
+.service-text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: white;
+}
+
+.white-service-text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  color: black;
+}
+
+.service-text h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.white-service-text h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.service-text h2::after {
+  content: "";
+  position: absolute;
+  width: 355px;
+  height: 2px;
+  background: white;
+  left: -60px;
+  bottom: 0;
+}
+
+.white-service-text h2::after {
+  content: "";
+  position: absolute;
+  width: 355px;
+  height: 2px;
+  background: black;
+  left: -60px;
+  bottom: 0;
+}
+
+.service-text2 h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: right;
+  position: relative;
+}
+
+.white-service-text2 h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.service-text2 h2::before {
+  content: "";
+  position: absolute;
+  width: 355px;
+  height: 2px;
+  background: white;
+  right: -60px;
+  bottom: 0;
+}
+
+.white-service-text2 h2::before {
+  content: "";
+  position: absolute;
+  width: 355px;
+  height: 2px;
+  background: black;
+  right: -60px;
+  bottom: 0;
+}
+
+.service-text p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 20px 0 16px;
+  text-align: justify;
+}
+
+.white-service-text p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 20px 0 16px;
+  text-align: justify;
+}
+
+.service-text2 p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 20px 0 16px;
+  text-align: justify;
+}
+
+.white-service-text2 p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 20px 0 16px;
+  text-align: justify;
+}
+
+.service-text button {
+  border: none;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  font-family: montserrat;
+  font-weight: 600;
+  margin-top: 25px;
+  transition: 0.3s all ease;
+}
+
+.white-service-text button {
+  border: none;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  font-family: montserrat;
+  font-weight: 600;
+  margin-top: 25px;
+  transition: 0.3s all ease;
+}
+
+.service-text2 button {
+  border: none;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  font-family: montserrat;
+  font-weight: 600;
+  margin-top: 25px;
+  transition: 0.3s all ease;
+  text-align: right;
+}
+
+.white-service-text2 button {
+  border: none;
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 35px;
+  font-family: montserrat;
+  font-weight: 600;
+  margin-top: 25px;
+  transition: 0.3s all ease;
+  text-align: right;
+}
+
+.white-btn {
+  background-color: white;
+}
+
+.orange-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(230, 65, 38, 1) 0%,
+    rgba(243, 159, 52, 1) 100%
+  );
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .orange-heading {
+    margin: 0 76px 48px;
+  }
+
+  .service-details {
+    flex-direction: column;
+  }
+
+  .service-details2 {
+    flex-direction: column-reverse;
+  }
+
+  .service-img-container {
+    width: 100%;
+  }
+
+  .service-img-container2 {
+    width: 100%;
+  }
+
+  .service-text-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .service-text {
+    padding: 20px;
+  }
+
+  .white-service-text {
+    padding: 20px;
+  }
+
+  .service-text2 {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .white-service-text2 {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  .service-text h2 {
+    font-size: 25px;
+  }
+
+  .white-service-text h2 {
+    font-size: 25px;
+  }
+
+  .service-text2 h2 {
+    font-size: 25px;
+  }
+
+  .white-service-text2 h2 {
+    font-size: 25px;
+  }
+
+  .service-text h2::after {
+    left: 0;
+  }
+
+  .white-service-text h2::after {
+    left: 0;
+  }
+
+  .service-text2 h2::before {
+    left: 0;
+  }
+
+  .white-service-text2 h2::before {
+    left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .orange-heading {
+    margin: 0 32px 48px;
+  }
+
+  .orange-heading h2 {
+    font-size: 25px;
+  }
+
+  .orange-heading p {
+    font-size: 15px;
+  }
+
+  .service-text h2::after {
+    width: 260px;
+  }
+
+  .white-service-text h2::after {
+    width: 260px;
+  }
+
+  .service-text2 h2::before {
+    width: 260px;
+  }
+
+  .white-service-text2 h2::before {
+    width: 260px;
+  }
+
+  .service-text2 h2 {
+    text-align: left;
+  }
+
+  .white-service-text2 h2 {
+    text-align: left;
+  }
+
+  .service-text p {
+    font-size: 15px;
+  }
+
+  .white-service-text p {
+    font-size: 15px;
+  }
+
+  .service-text2 p {
+    font-size: 15px;
+  }
+
+  .white-service-text2 p {
+    font-size: 15px;
+  }
+}

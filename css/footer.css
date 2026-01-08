@@ -1,0 +1,231 @@
+footer {
+  min-height: 60vh;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/home/Footer.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+  padding: 48px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subscribe-container {
+  width: 90%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 40px;
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.subscribe form {
+  display: flex;
+}
+
+.email-input {
+  flex: 1;
+  background-color: #fff;
+  padding: 0.6rem 2rem;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+.email-input::placeholder {
+  color: #000;
+}
+
+.subscribe-btn {
+  background: #e64126;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 65, 38, 1) 0%,
+    rgba(243, 159, 52, 1) 100%
+  );
+  color: #fff;
+  font-family: montserrat;
+  border: none;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 6px 24px;
+  border-radius: 25px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-content ul li {
+  margin-bottom: 10px;
+}
+
+.footer-part1 {
+  flex: 1.5;
+  margin-bottom: 24px;
+}
+
+.ph-no {
+  margin: 8px 0 4px;
+}
+
+.email {
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  margin-top: 25px;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+}
+
+.social-icons a img {
+  width: 35px;
+}
+
+.footer-part2 {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.footer-part3 {
+  flex: 1.5;
+  margin-bottom: 16px;
+}
+
+.footer-part4 {
+  width: fit-content;
+  margin-bottom: 16px;
+}
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.footer-bottom div {
+  font-size: 18px;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  footer {
+    min-height: auto;
+    padding: 80px 20px 40px;
+  }
+
+  .subscribe-container {
+    top: -5%;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer-part1 {
+    flex: 0 0 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-part2,
+  .footer-part3,
+  .footer-part4 {
+    flex: 0 0 45%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  footer {
+    padding: 100px 16px 32px;
+  }
+
+  .subscribe-container {
+    top: -5%;
+    width: 100%;
+  }
+
+  .email-input {
+    width: 100%;
+    flex: 1;
+  }
+
+  .subscribe-btn {
+    font-size: 18px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-part1,
+  .footer-part2,
+  .footer-part3,
+  .footer-part4 {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .footer-bottom div {
+    font-size: 14px;
+  }
+
+  footer a {
+    font-size: 16px;
+  }
+}

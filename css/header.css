@@ -1,0 +1,296 @@
+@font-face {
+  font-family: montserrat;
+  src: url(./Montserrat-VariableFont_wght.ttf);
+}
+
+/* ================= HEADER ================= */
+
+header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+}
+
+.fake-header {
+  width: 100%;
+  height: 10vh;
+}
+
+/* ================= HEADER TOP ================= */
+
+.header-top {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-mobile-img {
+  width: 20%;
+  height: 100%;
+}
+
+.header-mobile-img img {
+  display: none;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* ================= BUTTONS ================= */
+
+.header-orange-btn {
+  background: linear-gradient(90deg, #e64126, #f39f34);
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  margin-right: 10px;
+  border-radius: 0 0 25px 25px;
+  font-size: 18px;
+  width: 180px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-green-btn {
+  background-color: #8bc34a;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 0 0 25px 25px;
+  font-size: 18px;
+  width: 180px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= HEADER BOTTOM ================= */
+
+.header-bottom {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-bottom-logo {
+  position: absolute;
+  left: 0;
+  top: -60px;
+  width: 390px;
+  background: #fff;
+  padding: 0 35px 25px;
+  border-radius: 0 0 80px 0;
+}
+
+.header-bottom-logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* ================= NAV ================= */
+
+nav ul {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  width: 72%;
+  min-height: 7vh;
+  background: #fff;
+  border-radius: 0 0 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 35px;
+}
+
+.main-menu li {
+  list-style: none;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+/* ================= HAMBURGER ================= */
+
+i.bars {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #ff5100;
+}
+
+/* ================= SIDE MENU (SHUTTER MENU) ================= */
+
+.side-menu {
+  position: fixed;
+  top: 20vh;
+  left: 0;
+  width: 100%;
+
+  max-height: 0;
+  opacity: 0;
+
+  background-color: #fff;
+  border-radius: 0;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  overflow: hidden;
+  transition: max-height 0.45s ease, opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.side-menu li {
+  list-style: none;
+  padding: 10px;
+}
+
+.side-menu li a {
+  text-decoration: none;
+  color: #111;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
+/* 🔓 OPEN STATE */
+.side-menu.active {
+  max-height: 50vh;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column-reverse;
+    background-color: #fff;
+    padding: 10px 15px;
+  }
+
+  .header-top {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-mobile-img {
+    display: none;
+  }
+
+  .header-bottom-logo {
+    position: static;
+    width: 25%;
+    background: transparent;
+    padding: 0;
+  }
+
+  i.bars {
+    display: block;
+  }
+
+  .main-menu {
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-menu .hide-menu {
+    display: none;
+  }
+
+  .header-orange-btn {
+    width: auto;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 15px;
+  }
+
+  .header-green-btn {
+    width: auto;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 15px;
+  }
+
+  .side-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 25vh;
+    justify-content: space-between;
+  }
+
+  .fake-header {
+    height: 25vh;
+  }
+
+  .header-top {
+    height: auto;
+  }
+
+  .header-buttons {
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .header-bottom {
+    align-items: flex-start;
+  }
+
+  nav ul {
+    align-items: flex-start;
+  }
+
+  .header-bottom-logo {
+    width: 80%;
+    height: 60px;
+  }
+
+  .header-bottom-logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: left;
+  }
+
+  .main-menu {
+    width: auto;
+  }
+
+  .main-menu li {
+    margin: 0;
+  }
+
+  .menu-btn {
+    margin: 0;
+  }
+
+  .side-menu {
+    top: 25vh;
+  }
+}
