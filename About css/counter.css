@@ -1,0 +1,195 @@
+.about-counter-section {
+  min-height: 50vh;
+  margin: 48px 60px 0;
+}
+
+.counter-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-container {
+  width: 45%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.counter-img2 {
+  position: absolute;
+  right: -5%;
+  bottom: 0%;
+}
+
+.experience {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.experience h4 span {
+  color: #fea22a;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.experience h4 {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.right-container {
+  width: 45%;
+  padding: 1.5rem;
+}
+
+.right-container h2 {
+  margin-bottom: 8px;
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.right-container p {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.history-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px dashed #faa634;
+}
+
+.history-counter div {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.history-counter div:not(:last-child) {
+  border-right: 2px dashed #fea22a;
+}
+
+.history-counter div h1 {
+  font-size: 2.5rem;
+  color: #fea22a;
+  font-weight: 600;
+}
+
+.history-counter div p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .about-counter-section {
+    margin: 48px 20px 0;
+  }
+
+  .counter-container {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+  }
+
+  .counter-img2 {
+    width: 40%;
+    right: 0;
+    bottom: 0;
+  }
+
+  .experience {
+    padding: 15px;
+    top: 5%;
+    left: 5%;
+  }
+
+  .history-counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .history-counter div {
+    flex: 0 0 50%;
+    border-right: none;
+  }
+
+  .history-counter div h1 {
+    font-weight: 600;
+  }
+
+  .history-counter div p {
+    text-align: center;
+  }
+
+  .history-counter div:nth-child(1) {
+    border-right: 2px dashed #fea22a;
+    border-bottom: 2px dashed #fea22a;
+  }
+
+  .history-counter div:nth-child(2) {
+    border-bottom: 2px dashed #fea22a;
+  }
+
+  .history-counter div:nth-child(3) {
+    flex: 0 0 100%;
+    border-right: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .about-counter-section {
+    margin: 48px 0 0;
+    padding: 0 12px;
+  }
+
+  .experience h4 span {
+    font-size: 2rem;
+  }
+
+  .experience h4 {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .history-counter {
+    flex-direction: column;
+    border: 2px dashed #faa634;
+  }
+
+  .history-counter div {
+    flex: 0;
+  }
+
+  .history-counter div:not(:last-child) {
+    border-right: none;
+    border-bottom: 2px dashed #fea22a;
+  }
+
+  .right-container h2 {
+    font-size: 24px;
+  }
+
+  .right-container p {
+    font-size: 15px;
+  }
+
+  .history-counter div h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,149 @@
+.about-orange-section {
+  min-height: 100vh;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/about/mission-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 5rem 0;
+  padding: 3rem 0;
+}
+
+.service-detail {
+  display: flex;
+}
+
+.service-detail2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.vision-img,
+.mission-img {
+  width: 50%;
+}
+
+.vision-img img {
+  width: 100%;
+  border-radius: 0 100px 100px 0;
+}
+
+.mission-img img {
+  width: 100%;
+  border-radius: 100px 0 0 100px;
+}
+
+.vision-text,
+.mission-text {
+  width: 50%;
+  padding: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mission-text {
+  align-items: flex-end;
+}
+
+.vision-text h2,
+.mission-text h2 {
+  position: relative;
+  font-size: 2.25rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.vision-text h2::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 2px;
+  background: white;
+  left: -60px;
+  top: 55px;
+}
+
+.mission-text h2::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 2px;
+  background: white;
+  right: -60px;
+  top: 55px;
+}
+
+.vision-text p,
+.mission-text p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.6;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.mission-text p {
+  text-align: justify;
+}
+
+@media (max-width: 1024px) {
+  .service-detail,
+  .service-detail2 {
+    flex-direction: column;
+  }
+
+  .vision-img,
+  .mission-img,
+  .vision-text,
+  .mission-text {
+    width: 100%;
+  }
+
+  .vision-text,
+  .mission-text {
+    padding: 0.9rem;
+    align-items: center;
+  }
+
+  .vision-text h2::before {
+    left: -170px;
+  }
+
+  .mission-text h2::after {
+    right: -170px;
+  }
+
+  .vision-text p,
+  .mission-text p {
+    margin: 1.5rem 4.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-text,
+  .mission-text {
+    padding: 10px;
+  }
+
+  .vision-text h2,
+  .mission-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .vision-text h2::before {
+    width: 280px;
+    left: -90px;
+  }
+
+  .mission-text h2::after {
+    width: 280px;
+    right: -90px;
+  }
+
+  .vision-text p,
+  .mission-text p {
+    font-size: 14px;
+    margin: 25px 0;
+    text-align: justify;
+  }
+}

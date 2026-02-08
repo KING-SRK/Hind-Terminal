@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,6 +17,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -31,8 +36,33 @@
         </div>
 
         <div class="header-buttons">
-          <button class="header-orange-btn">E-Track</button>
-          <button class="header-orange-btn">E-Track CFC</button>
+          <div class="dropdown">
+            <button class="header-orange-btn dropdown-btn">E-Track</button>
+            <div class="dropdown-content">
+              <div class="sub-dropdown">
+                <a href="#" class="dropdown-btn">Rail</a>
+                <div class="sub-dropdown-content">
+                  <a href="#">By Container No</a>
+                  <a href="#">By B/L No</a>
+                </div>
+              </div>
+              <div class="sub-dropdown">
+                <a href="#" class="dropdown-btn">Air</a>
+                <div class="sub-dropdown-content">
+                  <a href="#">By Container No</a>
+                  <a href="#">By B/L No</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="header-orange-btn dropdown-btn">E-Track CFC</button>
+            <div class="dropdown-content">
+              <a href="#">Mundra CFC</a>
+              <a href="#">Panvel CFC</a>
+              <a href="#">Hazira CFC</a>
+            </div>
+          </div>
           <button class="header-orange-btn">E-Invoice</button>
           <button class="header-orange-btn">Media</button>
           <button class="header-green-btn">English</button>
@@ -51,8 +81,8 @@
         <nav>
           <!-- SIDE MENU -->
           <ul class="side-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/about.html">About Us</a></li>
             <li><a href="#">Recognition</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Tarrifs</a></li>
@@ -63,8 +93,8 @@
 
           <!-- MAIN MENU -->
           <ul class="main-menu">
-            <li class="hide-menu"><a href="#">Home</a></li>
-            <li class="hide-menu"><a href="#">About Us</a></li>
+            <li class="hide-menu"><a href="/index.html">Home</a></li>
+            <li class="hide-menu"><a href="/html/about.html">About Us</a></li>
             <li class="hide-menu"><a href="#">Recognition</a></li>
             <li class="hide-menu"><a href="#">Services</a></li>
             <li class="hide-menu"><a href="#">Tarrifs</a></li>

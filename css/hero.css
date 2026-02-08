@@ -13,6 +13,7 @@
   font-size: 36px;
   line-height: 1.4;
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 8px;
 }
 
@@ -20,6 +21,7 @@
   font-size: 18px;
   line-height: 1.4;
   font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
   margin-bottom: 16px;
 }
 
@@ -29,7 +31,7 @@
   border-radius: 35px;
   font-size: 16px;
   font-weight: 700;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   background: linear-gradient(
     90deg,
     rgba(230, 65, 38, 1) 0%,
@@ -107,10 +109,12 @@
   font-size: 32px;
   line-height: 1.4;
   font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-badge-card h2 span {
   font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,144 @@
+.why-choose-section {
+  min-height: 50vh;
+  padding: 0 1rem;
+}
+
+.why-choose-section h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.choose-container {
+  width: 100%;
+  display: flex;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+}
+
+.choose-left {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 250px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.image-card-1 img,
+.image-card-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.8rem;
+}
+
+.text-card-orange {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(230, 65, 38, 1) 0%,
+    rgba(243, 159, 52, 1) 100%
+  );
+  padding: 0.9rem;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.text-card-orange h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.text-card-orange p {
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.choose-right {
+  flex: 1;
+  padding: 0 0.75rem;
+  position: relative;
+}
+
+.choose-right video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.choose-right-card {
+  padding: 25px;
+  background: white;
+  position: absolute;
+  width: 55%;
+  top: 25px;
+  left: 4%;
+  border-radius: 20px;
+}
+
+.choose-right-card h4 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.choose-right-card p {
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+  .choose-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .why-choose-section h1 {
+    font-size: 25px;
+  }
+
+  .choose-container {
+    height: auto;
+  }
+
+  .choose-left {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px 250px;
+  }
+
+  .text-card-orange p {
+    font-size: 12px;
+  }
+
+  .choose-right video {
+    height: 440px;
+  }
+
+  .choose-right-card {
+    width: 60%;
+  }
+
+  .choose-right-card h4{
+    font-size: 20px;
+  }
+
+    .choose-right-card p {
+        font-size: 12px;
+    }
+}
