@@ -1,0 +1,111 @@
+.equipment-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/service_panvel/BG_Lines.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 48px;
+}
+
+.equipment-wrapper {
+  width: 90%;
+  height: 100%;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/service_panvel/Infographic_2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.equipment-center-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.equipment-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.equipment-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.equipment-left p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #000;
+}
+
+.equipment-left-first {
+  transform: translateX(70px);
+}
+
+.equipment-left-second {
+  transform: translateX(-200px);
+}
+
+.equipment-left-third {
+  transform: translateX(60px);
+}
+
+.equipment-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  flex-direction: column;
+  padding: 0 12px;
+}
+
+.equipment-right p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #000;
+}
+
+.equipment-right-first {
+  transform: translateX(-70px);
+}
+
+.equipment-right-second {
+  transform: translateX(200px);
+}
+
+.equipment-right-third {
+  transform: translateX(-60px);
+}
+
+@media (max-width: 1024px) {
+  .equipment-section {
+    display: none;
+  }
+}

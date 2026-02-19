@@ -1,0 +1,70 @@
+/* Container Layout */
+.services-overview-section {
+    padding: 80px 40px;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.so-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+/* Content Area */
+.so-content-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Text Cards */
+.so-text-card {
+    background: linear-gradient(to right, #e74624 0%, #f79e38 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Graphic Area */
+.so-graphic-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.so-graphic-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 992px) {
+    .so-wrapper {
+        flex-direction: column-reverse; /* ছোট স্ক্রিনে ইমেজ ওপরে চলে যাবে */
+        gap: 40px;
+    }
+    
+    .services-overview-section {
+        padding: 40px 20px;
+    }
+
+    .so-content-box, .so-graphic-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .so-text-card {
+        padding: 18px;
+        font-size: 14px;
+    }
+}

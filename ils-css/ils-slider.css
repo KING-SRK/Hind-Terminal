@@ -1,0 +1,190 @@
+/* ===============================
+   SECTION
+=================================*/
+.recent-section {
+  padding: 80px 0;
+}
+
+/* Inner Container (80% width) */
+.recent-inner {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; /* Arrow positioning এর জন্য */
+}
+
+/* ===============================
+   TITLE
+=================================*/
+.recent-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   SWIPER
+=================================*/
+.mySwiper {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+/* ===============================
+   CARD DESIGN
+=================================*/
+.assignment-card {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.assignment-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border-radius: 25px;
+  transition: transform 0.4s ease;
+}
+
+/* Hover Zoom */
+.assignment-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   OVERLAY
+=================================*/
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(243, 160, 52, 0.92);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 25px;
+}
+
+.overlay h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+/* Show Overlay */
+.assignment-card:hover .overlay {
+  opacity: 1;
+}
+
+/* ===============================
+   CUSTOM ARROWS
+=================================*/
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+/* Arrow Outside */
+.custom-prev {
+  left: -90px;
+}
+
+.custom-next {
+  right: -90px;
+}
+
+.custom-prev img,
+.custom-next img {
+  width: 100%;
+  display: block;
+}
+
+/* Hover Effect */
+.custom-prev:hover,
+.custom-next:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+@media (max-width: 1200px) {
+  .recent-inner {
+    width: 90%;
+  }
+
+  .custom-prev {
+    left: -60px;
+  }
+
+  .custom-next {
+    right: -60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .recent-title {
+    font-size: 36px;
+  }
+
+  .assignment-card img {
+    height: 300px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-section {
+    padding: 60px 0;
+  }
+
+  .recent-inner {
+    width: 95%;
+  }
+
+  .assignment-card img {
+    height: 260px;
+  }
+
+  .custom-prev {
+    left: -40px;
+  }
+
+  .custom-next {
+    right: -40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .recent-title {
+    font-size: 27px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    display: none; /* mobile এ hide */
+  }
+}

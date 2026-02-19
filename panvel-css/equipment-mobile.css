@@ -1,0 +1,161 @@
+/* ===============================
+   EQUIPMENT SECTION
+=================================*/
+
+.equipment-section-mobile {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/service_panvel/BG_Lines.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 20px;
+  margin-top: 48px;
+}
+
+/* ===============================
+   TOP IMAGE CONTAINER
+=================================*/
+
+.equipment-container-mobile {
+  width: 60%;
+  max-width: 600px;
+  height: 400px;
+
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/service_panvel/Screenshot_2025-07-19_165049-removebg-preview-removebg-preview.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.equipment-container-mobile p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+/* ===============================
+   SLIDER WRAPPER
+=================================*/
+
+.equipment-slider-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.equipmentMobileSwiper {
+  width: 100%;
+  max-width: 1000px; /* চাইলে adjust করতে পারো */
+  margin: 0 auto; /* এটাও important */
+  position: relative;
+  padding-bottom: 60px;
+}
+
+/* ===============================
+   SLIDE DESIGN
+=================================*/
+
+.equipment-slide-box {
+  text-align: center;
+  position: relative;
+}
+
+.equipment-slide-box img {
+  width: 280px;
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.equipment-slide-box p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 600;
+  width: 70%;
+  color: #000;
+  text-align: center;
+}
+
+/* ===============================
+   PAGINATION STYLE
+=================================*/
+
+.equipmentMobileSwiper .swiper-pagination {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.equipmentMobileSwiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  opacity: 1;
+  margin: 0 6px !important;
+}
+
+.equipmentMobileSwiper .swiper-pagination-bullet-active {
+  background: #f9a825;
+  width: 25px;
+  border-radius: 20px;
+}
+
+.equipment-section-mobile {
+  display: none;
+}
+/* ===============================
+   RESPONSIVE
+=================================*/
+
+@media (max-width: 1280px) {
+  .equipment-section-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .equipment-section-mobile {
+    min-height: 80vh;
+    margin-top: 0;
+    padding: 0px 20px;
+  }
+  .equipment-container-mobile {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  .equipment-container-mobile p {
+    font-size: 20px;
+  }
+
+  .equipment-slide-box img {
+    width: 220px;
+  }
+
+  .equipment-slide-box p {
+    font-size: 16px;
+  }
+}

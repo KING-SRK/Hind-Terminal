@@ -1,0 +1,201 @@
+.usp-container {
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/ils_services/BG.png");
+  border-radius: 30px;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  margin: 20px 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.usp-section-title {
+  font-size: 80px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.usp-line {
+  position: absolute;
+  top: 165px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #fff;
+  z-index: 0;
+}
+
+.usp-line::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 3px solid #f3a034;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  top: -8px;
+}
+
+.usp-line::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 3px solid #f3a034;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: -8px;
+}
+
+.usp-card {
+  padding: 0 12px;
+}
+
+.usp-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usp-card-dot {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 3px solid #f3a034;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.usp-card-line {
+  width: 2px;
+  height: 35px;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+.card-content {
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/ils_services/info.png")
+    no-repeat center center;
+  background-size: 100% 100%;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  z-index: 3;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-content img,
+.card-content p {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.card-content img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card-content p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #000;
+}
+
+/* --- Media Queries for Responsive Design --- */
+
+@media (max-width: 1024px) {
+  .usp-container {
+    margin: 20px 5%;
+  }
+
+  .usp-section-title {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+
+  .usp-card-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .usp-card {
+    width: 45%; 
+  }
+
+  .usp-line {
+    display: none; 
+  }
+}
+
+@media (max-width: 768px) {
+  .usp-container {
+    margin: 10px 15px;
+    padding: 40px 15px;
+    border-radius: 20px;
+  }
+
+  .usp-section-title {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+
+  .usp-card-container {
+    flex-direction: column; 
+  }
+
+  .usp-card {
+    width: 100%; 
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    min-height: 200px; 
+    padding: 25px;
+  }
+
+  .card-content p {
+    font-size: 16px;
+  }
+
+  .usp-card-line {
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .usp-section-title {
+    font-size: 28px;
+  }
+
+  .card-content {
+    background-size: 100% 100%;
+  }
+}

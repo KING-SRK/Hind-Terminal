@@ -1,0 +1,114 @@
+.logistics-cfs-section {
+  padding: 50px 5%;
+}
+
+.logistics-cfs-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT */
+.logistics-cfs-left {
+  width: 50%;
+}
+
+.logistics-cfs-left img {
+  width: 100%;
+  border-radius: 50px;
+  display: block;
+}
+
+/* RIGHT */
+.logistics-cfs-right {
+  width: 50%;
+}
+
+/* NAVIGATION */
+.logistics-cfs-nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.logistics-prev,
+.logistics-next {
+  width: 55px;
+  height: 55px;
+  background: #939393;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.logistics-prev::after {
+  content: "←";
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.logistics-next::after {
+  content: "→";
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+/* CARD */
+.logistics-card img {
+  width: 100%;
+  border-radius: 35px;
+}
+
+.logistics-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 16px;
+  text-align: center;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #ff3c1f, #f9a825);
+  transition: 0.3s;
+}
+
+.logistics-btn:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .logistics-cfs-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .logistics-cfs-left,
+  .logistics-cfs-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logistics-cfs-section {
+    padding: 30px 5%;
+  }
+
+  .logistics-next,
+  .logistics-prev {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logistics-prev::after,
+  .logistics-next::after {
+    font-size: 16px;
+  }
+}

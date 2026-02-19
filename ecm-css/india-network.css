@@ -1,0 +1,164 @@
+.india-network-section {
+  width: 100%;
+  padding: 60px 0;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/depot-and-ecmnr/BG_Lines.png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.network-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Left Side Styling */
+.network-content {
+  flex: 1;
+  width: 50%;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Right Side: Map Styling */
+.network-map {
+  flex: 1.2;
+  position: relative;
+}
+
+.map-img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+/* ===============================
+   LARGE TABLET (1200px ↓)
+=================================*/
+@media (max-width: 1200px) {
+  .network-wrapper {
+    gap: 40px;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+
+  .service-cards {
+    width: 100%;
+  }
+}
+
+/* ===============================
+   TABLET (992px ↓)
+=================================*/
+@media (max-width: 992px) {
+  .network-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .network-content {
+    width: 100%;
+  }
+
+  .network-map {
+    width: 100%;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .service-cards {
+    width: 100%;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 80%;
+  }
+}
+
+/* ===============================
+   MOBILE (768px ↓)
+=================================*/
+@media (max-width: 768px) {
+  .india-network-section {
+    padding: 40px 20px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .service-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .map-img {
+    max-width: 100%;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (480px ↓)
+=================================*/
+@media (max-width: 480px) {
+  .description {
+    font-size: 13px;
+  }
+
+  .service-card {
+    padding: 18px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,175 @@
+/* =========================
+   BOOST SECTION
+========================= */
+.boost-section {
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/career/Map.webp");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  position: relative;
+}
+
+.boost-overlay {
+  text-align: center;
+}
+
+/* Title */
+.boost-title {
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+/* Wrapper */
+.boost-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Each Item */
+.boost-item {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Yellow Circle Image */
+.boost-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+/* Text Inside Circle */
+.boost-item p {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #000;
+}
+
+.img-section {
+  width: 100%;
+  height: auto;
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/career/Vector_2.webp")
+    no-repeat center top;
+  background-size: cover;
+  background-color: #fff;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 165px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Laptop */
+@media (max-width: 1200px) {
+  .boost-wrapper {
+    gap: 40px;
+  }
+
+  .boost-item {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .boost-section {
+    background-size: 110%;
+    padding: 90px 20px;
+  }
+
+  .boost-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .boost-wrapper {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .boost-item {
+    width: 220px;
+    height: 220px;
+  }
+
+  .boost-item p {
+    font-size: 16px;
+    padding: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .boost-section {
+    background-size: cover;
+    background-position: top center;
+    padding: 50px 20px;
+  }
+
+  .boost-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .boost-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .boost-item {
+    width: 200px;
+    height: 200px;
+  }
+
+  .boost-item p {
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .img-section {
+    background-size: contain;
+    min-height: 200px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .boost-item {
+    width: 180px;
+    height: 180px;
+  }
+
+  .boost-item p {
+    font-size: 13px;
+  }
+
+  .img-section {
+    min-height: 65px;
+    margin-bottom: 80px;
+  }
+}

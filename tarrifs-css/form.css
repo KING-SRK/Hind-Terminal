@@ -1,0 +1,223 @@
+.logistic-oporation {
+  min-height: 100vh;
+  width: 100%;
+  padding: 48px 0;
+}
+
+.logistic-oporation-heading {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.logistic-oporation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.logistic-oporation-left {
+  width: 50%;
+  padding: 0 24px;
+}
+
+.logistic-oporation-cards {
+  display: flex;
+  gap: 15px; /* কার্ডগুলোর মধ্যে গ্যাপের জন্য */
+  align-items: flex-end;
+}
+
+.logistic-oporation-card {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  overflow: visible; /* আইকনটা বাইরে বের করার জন্য */
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
+  border: 5px solid #e0e0e0;
+}
+
+.icon-img {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.logistic-oporation-card:hover .icon-img {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.logistic-oporation-card:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.logistic-oporation-right {
+  width: 50%;
+}
+
+.tariff-form-container {
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/tariff/BG.png");
+  background-size: cover;
+  padding: 30px;
+  border-radius: 30px 0 0 30px;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.form-title {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.form-group-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group-row input,
+.form-group-row select,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.submit-btn {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  padding: 15px;
+  background: linear-gradient(to right, #f78b32, #d45c1a);
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #e67e22;
+}
+
+@media (max-width: 1024px) {
+  .logistic-oporation-container {
+    flex-direction: column;
+  }
+  .logistic-oporation-left {
+    width: 100%;
+  }
+  .logistic-oporation-right {
+    width: 100%;
+  }
+  .logistic-oporation-cards {
+    justify-content: center;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .form-group-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .logistic-oporation {
+    padding: 20px 0;
+  }
+  .logistic-oporation-heading {
+    font-size: 25px;
+  }
+
+  .logistic-oporation-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 1rem;
+  }
+
+  .logistic-oporation-left {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .logistic-oporation-cards {
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  .logistic-oporation-card {
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  .logistic-oporation-card:nth-child(2) {
+    margin-bottom: 15px;
+  }
+
+  .card-img {
+    border-radius: 15px;
+    border: 3px solid #e0e0e0;
+  }
+
+  .icon-img {
+    width: 40px;
+    bottom: -15px;
+  }
+
+  .logistic-oporation-right {
+    width: 100%;
+  }
+
+  .tariff-form-container {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .form-title {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .form-group-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .submit-btn {
+    width: 70%;
+    font-size: 16px;
+    padding: 12px;
+  }
+}

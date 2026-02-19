@@ -1,0 +1,170 @@
+/* =========================
+   BRANCH SECTION
+========================= */
+
+.branch-section {
+  position: relative;
+  padding: 120px 5%;
+  margin: 80px 0;
+  min-height: 650px; /* এটা add করো */
+  display: flex;
+  align-items: flex-end; /* এটা সবচেয়ে গুরুত্বপূর্ণ */
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/contact-us/Vector_2.png");
+  background-repeat: no-repeat;
+  background-position: center top; /* image উপরে থাকবে */
+  background-size: contain;
+}
+
+.branch-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* cards নিচে বসবে */
+}
+
+/* CARD STYLE */
+.branch-card {
+  width: 38%;
+  min-height: 320px;
+  border-radius: 35px;
+  padding: 50px 40px;
+  background: linear-gradient(135deg, #f79a2e, #eb3e1b);
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.branch-content h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.branch-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.contact {
+  margin-top: 10px;
+}
+
+/* BIG CITY NAME */
+.city-name {
+  font-size: 60px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 15px;
+  left: 50px;
+  white-space: nowrap;
+}
+
+/* RIGHT ALIGN TEXT */
+.right-card .city-name {
+  left: auto;
+  right: 50px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1200px) {
+  .branch-section {
+    min-height: 600px;
+    padding: 100px 5%;
+  }
+
+  .branch-card {
+    width: 42%;
+  }
+
+  .city-name {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .branch-section {
+    min-height: auto;
+    padding: 80px 5%;
+    align-items: flex-start; /* আর bottom alignment দরকার নেই */
+    background-position: center top;
+    background-size: 500px;
+  }
+
+  .branch-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .branch-card {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .city-name {
+    font-size: 40px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .branch-section {
+    padding: 70px 20px;
+    background-size: 350px;
+  }
+
+  .branch-card {
+    padding: 40px 30px;
+    border-radius: 28px;
+  }
+
+  .branch-content h4 {
+    font-size: 18px;
+  }
+
+  .branch-content p {
+    font-size: 14px;
+  }
+
+  .city-name {
+    font-size: 32px;
+    left: 30px;
+  }
+
+  .right-card .city-name {
+    right: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .branch-section {
+    padding: 60px 15px;
+    background-size: 250px;
+  }
+
+  .branch-card {
+    padding: 30px 22px;
+    border-radius: 22px;
+  }
+
+  .branch-content h4 {
+    font-size: 16px;
+  }
+
+  .branch-content p {
+    font-size: 13px;
+  }
+
+  .city-name {
+    font-size: 24px;
+    bottom: 15px;
+  }
+}

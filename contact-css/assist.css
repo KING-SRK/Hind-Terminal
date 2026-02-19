@@ -1,0 +1,172 @@
+/* =========================
+   ASSIST SECTION
+========================= */
+
+.assist-section {
+  width: 100%;
+  padding: 100px 0;
+  padding-left: 5%;
+  font-family: "Poppins", sans-serif;
+}
+
+.assist-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.assist-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.assist-left h2 {
+  font-size: 30px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Form */
+.assist-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.assist-form input,
+.assist-form textarea {
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  width: 100%;
+}
+
+.assist-form textarea {
+  height: 90px;
+  resize: none;
+}
+
+/* Captcha */
+.captcha-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  width: fit-content;
+}
+
+/* Button */
+.submit-btn {
+  margin-top: 10px;
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #f04e23, #f8a12b);
+  width: 220px;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.assist-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; /* bottom aligned */
+}
+
+.assist-right img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .assist-section {
+    padding: 80px 0;
+  }
+
+  .assist-container {
+    flex-direction: column-reverse;
+  }
+
+  .assist-left,
+  .assist-right {
+    width: 100%;
+  }
+
+  .assist-left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .assist-left h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .assist-form {
+    max-width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+  .assist-right {
+    margin-top: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .assist-section {
+    padding: 40px 0;
+  }
+
+  .assist-left h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .assist-form input,
+  .assist-form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

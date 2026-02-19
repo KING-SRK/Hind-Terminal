@@ -1,0 +1,140 @@
+.services-container {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.services-wrapper {
+  display: flex;
+  gap: 15px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-item {
+  position: relative;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  flex: 1;
+}
+
+.service-item.active {
+  flex: 2.8;
+}
+
+.service-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.service-content-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(244, 162, 59, 0.9);
+  color: white;
+  padding: 30px;
+  border-radius: 25px;
+  width: 85%;
+  max-width: 400px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.service-item.active .service-content-card {
+  opacity: 1;
+}
+
+.service-content-card h3 {
+  margin: 0 0 15px 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.service-content-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.service-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  padding: 20px 0;
+}
+
+.service-item.active .service-label {
+  opacity: 0;
+}
+
+/* Tablet and Mobile Responsive Adjustments */
+@media (max-width: 1024px) {
+  .services-wrapper {
+    height: auto; /* ফিক্সড হাইট সরিয়ে অটো করা হলো */
+    flex-direction: column; /* ওপর-নিচে কার্ডগুলো সাজানো হবে */
+    gap: 20px;
+  }
+
+  .service-item {
+    width: 100%;
+    height: 300px; /* মোবাইলে প্রতিটি কার্ডের হাইট */
+    flex: none; /* ফ্লেক্স গ্রো বন্ধ করা হলো */
+  }
+
+  .service-item.active {
+    height: 400px; /* যেটা খোলা থাকবে সেটার হাইট একটু বেশি */
+    flex: none;
+  }
+
+  .service-content-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .service-content-card h3 {
+    font-size: 22px;
+  }
+
+  .service-content-card p {
+    font-size: 14px;
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .services-container {
+    padding: 30px 10px;
+  }
+
+  .service-item {
+    height: 250px;
+  }
+
+  .service-item.active {
+    height: 350px;
+  }
+
+  .service-content-card h3 {
+    font-size: 18px;
+  }
+}

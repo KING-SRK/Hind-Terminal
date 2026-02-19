@@ -1,0 +1,168 @@
+/* ===============================
+   SECTION
+=================================*/
+.career-section {
+  padding: 0 0 48px;
+}
+
+.career-container {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* ===============================
+   LEFT IMAGE
+=================================*/
+.career-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ===============================
+   RIGHT CONTENT
+=================================*/
+.career-content {
+  width: 50%;
+}
+
+.career-content h2 {
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.career-content p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 24px;
+}
+
+/* ===============================
+   STATS
+=================================*/
+.career-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-card {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow:
+    rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.stat-card h3 {
+  font-size: 48px;
+  color: #000000;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.stat-card p {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-align: start;
+  color: #000000;
+}
+
+/* ===============================
+   RESPONSIVE (UPDATED)
+=================================*/
+
+/* Tablets and IPads (below 992px) */
+@media (max-width: 992px) {
+  .career-container {
+    flex-direction: column;
+    text-align: center;
+    width: 90%; /* মার্জিন একটু বাড়িয়ে দিলাম */
+    gap: 3rem;
+  }
+
+  .career-content {
+    width: 100%; /* কন্টেন্ট ফুল উইডথ হবে */
+  }
+
+  .career-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+
+  .career-content p {
+    font-size: 18px;
+    text-align: center; /* সেন্টারে থাকলে মোবাইলে বেশি ভালো লাগে */
+  }
+
+  .career-stats {
+    justify-content: center;
+    flex-wrap: wrap; /* কার্ডগুলো এক লাইনে না ধরলে নিচে নেমে আসবে */
+    gap: 20px;
+  }
+
+  .stat-card {
+    width: 100%; /* ছোট ট্যাবলেটে কার্ডগুলো বড় দেখাবে */
+    max-width: 300px;
+  }
+}
+
+/* Small Mobile Screens (below 576px) */
+@media (max-width: 576px) {
+  .career-section {
+    padding: 40px 0;
+  }
+
+  .career-content h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .career-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* মোবাইলে স্ট্যাট কার্ডের ডিজাইন */
+  .career-stats {
+    flex-direction: column; /* মোবাইলে একটার নিচে একটা কার্ড */
+    align-items: center;
+  }
+
+  .stat-card {
+    height: auto; /* ফিক্সড হাইট সরিয়ে দিলাম যাতে কন্টেন্ট অনুযায়ী বাড়ে */
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+  }
+
+  .stat-card h3 {
+    font-size: 40px; /* ফন্ট সাইজ একটু কমালাম */
+  }
+
+  .stat-card p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .career-image img {
+    max-width: 100%; /* ইমেজ যাতে স্ক্রিনের বাইরে না যায় */
+  }
+}

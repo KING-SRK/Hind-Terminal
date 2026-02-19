@@ -1,0 +1,168 @@
+/* Container Layout */
+.htc-contact-area {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Gradient Top Bar */
+.htc-action-panel {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #e44321, #f9a039);
+  padding: 8px;
+  border-radius: 60px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.htc-dropdown-container {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 50px;
+  margin-right: 12px;
+}
+
+.htc-location-field {
+  width: 100%;
+  padding: 12px 25px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #444;
+  background: transparent;
+  cursor: pointer;
+}
+
+.htc-pdf-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  padding: 12px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.htc-pdf-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Contact Card with Custom Border */
+.htc-info-box-wrapper {
+  width: 100%;
+  max-width: 680px;
+  padding: 0 10px;
+}
+
+.htc-framed-card {
+  border: 2px solid #000000;
+  border-radius: 50px;
+  padding: 55px 40px;
+  text-align: center;
+  position: relative;
+}
+
+/* Creating gaps in the border like the screenshot */
+.htc-framed-card::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 20%;
+  right: 20%;
+  height: 6px;
+  background: #ffffff;
+}
+.htc-framed-card::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 20%;
+  right: 20%;
+  height: 6px;
+  background: #ffffff;
+}
+
+.htc-box-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.htc-details-body p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.5;
+}
+
+.htc-full-address {
+  margin-top: 20px !important;
+  font-weight: 500;
+}
+
+/* Decorative Markers (The Orange Dots) */
+.htc-marker {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #f9a039;
+  border-radius: 50%;
+}
+
+.htc-marker-top {
+  top: -6px;
+  left: 20%;
+}
+.htc-marker-bottom {
+  bottom: -6px;
+  right: 20%;
+}
+.htc-marker-left {
+  top: 35%;
+  left: -6px;
+}
+.htc-marker-right {
+  bottom: 35%;
+  right: -6px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .htc-contact-area {
+    padding: 40px 20px;
+  }
+  .htc-action-panel {
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 15px;
+  }
+  .htc-dropdown-container {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .htc-pdf-btn {
+    width: 100%;
+  }
+  .htc-box-title {
+    font-size: 26px;
+  }
+  .htc-framed-card {
+    padding: 40px 20px;
+    border-radius: 35px;
+  }
+  .htc-details-body p {
+    font-size: 14px;
+  }
+}
