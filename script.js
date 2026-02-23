@@ -1,4 +1,28 @@
-// ১. মেনু টগলের ফাংশন
+function initializeSideDropdowns() {
+  const dropdownHeaders = document.querySelectorAll(".side-dropdown-header");
+
+  dropdownHeaders.forEach((header) => {
+    header.onclick = function (e) {
+      // ড্রপডাউন টগল করার জন্য
+      const parent = this.parentElement;
+      parent.classList.toggle("active");
+
+      // আইকন অ্যানিমেশন
+      const icon = this.querySelector(".toggle-icon, .toggle-icon-sub");
+      if (icon) {
+        if (parent.classList.contains("active")) {
+          icon.style.transform = "rotate(180deg)";
+        } else {
+          icon.style.transform = "rotate(0deg)";
+        }
+      }
+
+      console.log("Submenu toggled! ✨");
+    };
+  });
+}
+
+// ২. তোমার মেইন মেনু ফাংশনটা একটু মডিফাই করছি
 function initializeMenu() {
   const menuBtn = document.querySelector(".menu-btn");
   const sideMenu = document.querySelector(".side-menu");
@@ -11,9 +35,11 @@ function initializeMenu() {
         icon.classList.toggle("fa-bars");
         icon.classList.toggle("fa-xmark");
       }
-      console.log("Menu Toggled! 🍔");
     };
   }
+
+  // ড্রপডাউন ফাংশনটা এখানে কল করে দাও ✨
+  initializeSideDropdowns();
 }
 
 // ২. কাউন্টার অ্যানিমেশন ফাংশন

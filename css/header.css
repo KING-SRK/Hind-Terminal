@@ -161,45 +161,90 @@ i.bars {
 
 /* ================= SIDE MENU (SHUTTER MENU) ================= */
 
+/* ================= SIDE MENU (Updated) ================= */
+
 .side-menu {
   position: fixed;
-  top: 20vh;
+  top: 20vh; /* স্ক্রিন সাইজ অনুযায়ী এটা JS দিয়ে অ্যাডজাস্ট করা ভালো */
   left: 0;
   width: 100%;
-
-  max-height: 0;
+  max-height: 0; /* শুরুতে বন্ধ থাকবে */
   opacity: 0;
-
   background-color: #fff;
-  border-radius: 0;
-  display: none;
+  display: none; /* flex-direction column ই থাকবে */
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  overflow: hidden;
+  overflow-y: auto; /* মেনু বড় হলে যাতে স্ক্রল করা যায় */
   transition:
-    max-height 0.45s ease,
+    max-height 0.5s ease-in-out,
     opacity 0.3s ease;
-  pointer-events: none;
   z-index: 99;
+  pointer-events: none;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.side-menu li {
-  list-style: none;
-  padding: 10px;
+/* সাইড মেনুর হেডার অংশ যেখানে লেখা আর আইকন থাকে */
+.side-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* এটা লেখা একদিকে আর আইকনকে অন্যদিকে ঠেলে দেবে */
+  width: 100%;
+  padding-right: 20px; /* আইকন যাতে একদম বর্ডারে না ঠেকে যায় */
 }
 
-.side-menu li a {
-  text-decoration: none;
-  color: #111;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
+/* আইকনগুলোর স্টাইল একটু ঠিক করে নেওয়া */
+.toggle-icon,
+.toggle-icon-sub {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  padding: 10px; /* ক্লিক এরিয়া বাড়ানোর জন্য */
 }
 
 .side-menu.active {
-  max-height: 50vh;
+  max-height: 80vh; /* মেনু বড় করার জন্য বাড়িয়ে দিলাম */
   opacity: 1;
   pointer-events: auto;
+  padding-bottom: 20px;
+}
+
+/* সাইড মেনুর ভেতরের ড্রপডাউন স্টাইল */
+.side-dropdown-content,
+.side-sub-dropdown-content {
+  display: none; /* শুরুতে লুকানো */
+  list-style: none;
+  font-size: 0.9rem;
+  background-color: #fcfcfc;
+}
+
+.side-menu li {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.side-menu li a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  width: 100%;
+  font-family: montserrat, sans-serif;
+}
+
+/* ড্রপডাউন যখন অ্যাক্টিভ হবে তখন কন্টেন্ট দেখাবে */
+/* .open এর বদলে .active ব্যবহার করো */
+.side-dropdown.active > .side-dropdown-content,
+.side-sub-dropdown.active > .side-sub-dropdown-content {
+  display: block !important;
+}
+
+/* আইকন ঘোরানোর অ্যানিমেশন (যদি চাও) */
+.side-dropdown.active > .side-dropdown-header .toggle-icon,
+.side-sub-dropdown.active > .side-dropdown-header .toggle-icon-sub {
+  transform: rotate(180deg);
+}
+
+/* সাব-ড্রপডাউনের জন্য আলাদা একটু প্যাডিং যাতে বুঝতে সুবিধা হয় */
+.side-sub-dropdown-content {
+  background-color: #f1f1f1 !important;
 }
 
 .dropdown {
@@ -278,6 +323,16 @@ i.bars {
     flex-direction: column-reverse;
     background-color: #fff;
     padding: 10px 15px;
+    height: auto;
+  }
+
+  nav ul {
+    position: static; /* অ্যাবসোলিউট পজিশন সরিয়ে দাও */
+    width: 100%;
+    min-height: auto;
+    padding: 10px;
+    justify-content: space-between;
+    background: transparent; /* যাতে হেডারের সাথে মিশে যায় */
   }
 
   .header-top {
@@ -290,10 +345,10 @@ i.bars {
   }
 
   .header-bottom-logo {
-    position: static;
-    width: 25%;
-    background: transparent;
-    padding: 0;
+    position: static; /* পিসি স্টাইল থেকে মুক্ত করো */
+    width: 150px; /* লোগোর সাইজ নির্দিষ্ট করে দাও */
+    padding: 10px;
+    border-radius: 0;
   }
 
   i.bars {
@@ -326,6 +381,10 @@ i.bars {
 
   .side-menu {
     display: flex;
+  }
+
+  .side-dropdown-header {
+    width: 100%;
   }
 }
 
