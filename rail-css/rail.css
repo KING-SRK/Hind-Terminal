@@ -1,0 +1,187 @@
+.rail-operations-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.rail-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.rail-main-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.rail-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 3rem;
+}
+
+.rail-image-side {
+  flex: 1;
+}
+
+.rail-image-side img {
+  width: 100%;
+  border-radius: 40px;
+  display: block;
+}
+
+.rail-text-side {
+  flex: 1;
+}
+
+.rail-sub-title {
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.rail-divider {
+  width: 100%;
+  border: 0;
+  border-top: 2px solid #333;
+  margin-bottom: 25px;
+}
+
+.rail-features-list {
+  list-style: none;
+  padding: 0;
+}
+
+.rail-features-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.rail-features-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img-section {
+  width: 100%;
+  height: auto;
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/rail_service/Vector.png")
+    no-repeat center top;
+  background-size: contain;
+  background-color: #fff;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 165px;
+}
+
+@media (max-width: 1024px) {
+  .rail-container {
+    max-width: 95%;
+  }
+
+  .rail-sub-title,
+  .rail-main-title {
+    font-size: 30px;
+  }
+
+  .img-section {
+    margin-right: 200px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .rail-operations-section {
+    padding: 50px 0;
+  }
+
+  .rail-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 2rem;
+  }
+
+  .rail-image-side,
+  .rail-text-side {
+    width: 100%;
+    flex: none;
+  }
+
+  .rail-main-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .rail-sub-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .rail-divider {
+    margin: 15px auto 25px auto;
+    width: 80%;
+  }
+
+  .rail-features-list li {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .rail-image-side img {
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-section {
+    background-size: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .rail-main-title {
+    font-size: 22px;
+  }
+
+  .rail-sub-title {
+    font-size: 20px;
+  }
+
+  .rail-features-list li {
+    font-size: 15px;
+  }
+
+  .rail-container {
+    padding: 0 15px;
+  }
+
+  .img-section {
+    min-height: 150px;
+    height: auto;
+    margin-bottom: 0;
+    background-size: contain;
+  }
+}

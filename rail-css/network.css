@@ -1,0 +1,203 @@
+.network-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.network-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.network-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.network-map-side {
+  flex: 1;
+}
+.network-map-side img {
+  width: 100%;
+  height: auto;
+}
+
+.network-table-side {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Header Styling */
+.freq-header {
+  display: flex;
+  background: #555;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.header-item {
+  flex: 1;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  border-right: 1px solid #777;
+}
+
+.header-item:last-child {
+  border-right: none;
+}
+
+/* Mundra Large Block */
+.freq-block-wrapper {
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gateway-main-orange {
+  flex: 1;
+  background: #f7931e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.inland-freq-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-row {
+  display: flex;
+  border-bottom: 1px solid #ffffff;
+  background-color: #f7931e;
+}
+
+.sub-row:last-child {
+  border-bottom: none;
+}
+
+.sub-row div {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  border-right: 1px solid #ffffff;
+}
+.sub-row div:last-child {
+  border-right: none;
+}
+
+/* Standard Rows */
+.freq-row {
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.freq-row div {
+  flex: 1;
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* The Orange Rounded Rows (Exact same as image) */
+.freq-row.highlighted {
+  background: #f7931e;
+  border-radius: 50px; /* পিল শেপ */
+  border: none;
+  margin: 5px 0;
+}
+
+/* --- Responsive Fixes for Network Section --- */
+
+@media (max-width: 1024px) {
+  .network-container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .header-item,
+  .gateway-main-orange,
+  .sub-row div,
+  .freq-row div {
+    font-size: 14px; /* ছোট ল্যাপটপে ফন্ট একটু ছোট করলাম */
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .network-content-wrapper {
+    flex-direction: column; /* ম্যাপ উপরে, টেবিল নিচে */
+    gap: 30px;
+  }
+
+  .network-map-side,
+  .network-table-side {
+    width: 100%;
+    flex: none;
+  }
+
+  .freq-header {
+    display: none; /* মোবাইলে হেডার হাইড রাখাই ভালো */
+  }
+
+  .freq-block-wrapper {
+    flex-direction: column; /* Mundra ব্লকটা মোবাইলে লম্বালম্বি হবে */
+  }
+
+  .gateway-main-orange {
+    padding: 15px;
+    border-bottom: 2px solid #fff;
+  }
+
+  .freq-row {
+    padding: 10px 0;
+  }
+
+  .freq-row.highlighted {
+    border-radius: 12px; /* ছোট স্ক্রিনে বেশি গোল হলে টেক্সট ধরে না */
+    margin: 8px 0;
+  }
+
+  /* মোবাইলে ৩টি কলামের টেক্সট যেন জট পাকিয়ে না যায় */
+  .sub-row div,
+  .freq-row div {
+    font-size: 13px;
+    padding: 8px 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .network-section {
+    padding: 40px 0;
+  }
+
+  .sub-row div,
+  .freq-row div {
+    font-size: 11px; /* খুব ছোট ফোনের জন্য */
+    letter-spacing: -0.2px;
+  }
+
+  .gateway-main-orange {
+    font-size: 18px;
+  }
+
+  /* মোবাইলে বর্ডারগুলো হালকা করার জন্য */
+  .sub-row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}

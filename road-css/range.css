@@ -1,0 +1,169 @@
+.range-section {
+  padding: 60px 40px;
+}
+
+.range-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+.range-left {
+  width: 50%;
+  padding: 0 12px;
+}
+
+.range-left img {
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+}
+
+/* RIGHT CONTENT */
+.range-right {
+  width: 50%;
+  padding: 0 12px;
+}
+
+.range-right h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.range-underline {
+  width: 60%;
+  height: 2px;
+  background: #000;
+  margin-bottom: 40px;
+}
+
+.range-item {
+  margin-bottom: 35px;
+}
+
+.range-item p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* ORANGE GRADIENT PILL */
+.range-pill {
+  background: linear-gradient(to right, #e73c1e, #f39c12);
+  color: #fff;
+  padding: 18px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  min-width: 80%;
+}
+
+@media (max-width: 1024px) {
+  .range-section {
+    padding: 50px 30px;
+  }
+
+  .range-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .range-left,
+  .range-right {
+    width: 100%;
+  }
+
+  .range-left img {
+    border-radius: 25px;
+  }
+
+  .range-right h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .range-underline {
+    margin: 10px auto 30px;
+    width: 200px;
+  }
+
+  .range-item p {
+    font-size: 18px;
+  }
+
+  .range-pill {
+    font-size: 16px;
+    padding: 16px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .range-section {
+    padding: 40px 20px;
+  }
+
+  .range-right h2 {
+    font-size: 26px;
+  }
+
+  .range-item {
+    margin-bottom: 25px;
+  }
+
+  .range-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .range-pill {
+    font-size: 15px;
+    padding: 14px 20px;
+    border-radius: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .range-right h2 {
+    font-size: 22px;
+  }
+
+  .range-underline {
+    width: 140px;
+  }
+
+  .range-item p {
+    font-size: 14px;
+  }
+
+  .range-pill {
+    font-size: 13px;
+    padding: 12px 16px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .range-section {
+    padding: 30px 15px;
+  }
+
+  .range-right h2 {
+    font-size: 20px;
+  }
+
+  .range-item p {
+    font-size: 13px;
+  }
+
+  .range-pill {
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+}

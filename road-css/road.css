@@ -1,0 +1,322 @@
+.road-section {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.road-header h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.road-header p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.road-diagram {
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/Services-ROAD-TRANSPORTATION/Vector_1.png");
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  margin: 48px 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 40%;
+  overflow: hidden;
+}
+
+.road-diagram-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-49%, 23%);
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  max-width: 370px;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.road-diagram-container {
+  display: flex;
+}
+
+.road-diagram-left {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 150px;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 12px;
+}
+
+.road-diagram-right {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 130px;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 12px;
+}
+
+.road-diagram-card {
+  background: linear-gradient(to right, #e64026, #f3a034);
+  padding: 25px 30px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  min-height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.road-diagram-card p {
+  color: white;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.road-diagram-card-1 {
+  transform: translateX(-250px);
+}
+
+.road-diagram-card-2 {
+  transform: translateX(-350px);
+}
+
+.road-diagram-card-3 {
+  transform: translateX(-250px);
+}
+
+.road-diagram-card-4 {
+  transform: translateX(250px);
+}
+
+.road-diagram-card-5 {
+  transform: translateX(350px);
+}
+
+.road-diagram-card-6 {
+  transform: translateX(250px);
+}
+
+.road-diagram-mobile {
+  margin: 48px 0;
+  padding: 0 20px;
+  display: none;
+}
+
+/* =========================
+   MOBILE ROAD SLIDER
+========================= */
+
+.rdm-img-section {
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/Services-ROAD-TRANSPORTATION/Vector_1.png");
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rdm-img-section p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* slider wrapper */
+.rdm-container {
+  margin-top: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Swiper wrapper fix */
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card style (same as before) */
+.rdm-slide {
+  background: linear-gradient(to right, #e64026, #f3a034);
+  padding: 25px 20px;
+  border-radius: 40px;
+  min-height: 120px;
+  width: 100%;
+}
+
+.rdm-slide p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.road-big-heading {
+  width: 100%;
+  max-width: 1450px;
+  margin: 50px auto;
+  margin-top: 170px;
+}
+
+.road-big-heading h2 {
+  opacity: 0.251;
+  font-size: 100px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+/* ============================================================
+   ROAD TRANSPORTATION RESPONSIVE STYLES
+   ============================================================ */
+
+/* Desktop & Large Screens (Default adjustments) */
+@media (max-width: 1440px) {
+  .road-diagram {
+    background-size: 35%; /* ডায়াগ্রামের সাইজ একটু অ্যাডজাস্ট করা হয়েছে */
+  }
+  .road-diagram-card {
+    width: 60%; /* কার্ডের উইডথ একটু বাড়ানো হয়েছে */
+  }
+}
+
+/* Medium Screens (Laptops & Large Tablets) */
+@media (max-width: 1200px) {
+  .road-diagram-card-1,
+  .road-diagram-card-3 {
+    transform: translateX(-150px);
+  }
+  .road-diagram-card-2 {
+    transform: translateX(-200px);
+  }
+  .road-diagram-card-4,
+  .road-diagram-card-6 {
+    transform: translateX(150px);
+  }
+  .road-diagram-card-5 {
+    transform: translateX(200px);
+  }
+
+  .road-header h2 {
+    font-size: 30px;
+  }
+  .road-diagram-text {
+    font-size: 28px;
+    max-width: 250px;
+  }
+}
+
+/* Tablets (Portrait) - Switching to Mobile View */
+@media (max-width: 1024px) {
+  .road-diagram {
+    display: none; /* বড় ডায়াগ্রাম হাইড করা হলো */
+  }
+
+  .road-diagram-mobile {
+    display: block; /* মোবাইল স্লাইডার শো করা হলো */
+  }
+
+  .road-header p {
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .rdm-img-section p {
+    font-size: 18px;
+    padding: 0 40px;
+    margin-top: 5rem;
+    width: 300px;
+  }
+
+  .road-big-heading {
+    margin: 0 auto;
+  }
+
+  .road-big-heading h2 {
+    font-size: 50px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .road-header h2 {
+    font-size: 26px;
+  }
+
+  .rdm-img-section {
+    height: 250px; /* মোবাইল স্ক্রিনে ইমেজ ছোট করা হয়েছে */
+  }
+
+  .rdm-img-section p {
+    font-size: 18px;
+    padding: 0 40px;
+    margin-top: 5rem;
+    width: 210px;
+  }
+
+  .rdm-slide {
+    min-width: 90%; /* মোবাইলে স্লাইড কার্ডগুলো বড় দেখাবে */
+    padding: 20px;
+  }
+
+  .rdm-slide p {
+    font-size: 14px;
+  }
+
+  .road-big-heading h2 {
+    font-size: 30px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  .road-header h2 {
+    font-size: 22px;
+  }
+
+  .rdm-container {
+    margin-top: 15px;
+  }
+}

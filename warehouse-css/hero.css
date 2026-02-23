@@ -1,0 +1,195 @@
+.hero-bottom-section {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px 20px;
+  border-radius: 30px;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/warehouse/Image_5.png");
+  position: relative;
+  margin-bottom: 35px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-bottom-section::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ffe191;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 225, 145, 0) 40%,
+    rgba(251, 165, 52, 1) 60%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 225, 145, 0) 40%,
+    rgba(251, 165, 52, 1) 60%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 225, 145, 0) 40%,
+    rgba(251, 165, 52, 1) 60%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFE191", endColorstr="#FBA534", GradientType=1);
+  z-index: 0;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+.hero-bottom-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-bottom-img {
+  width: 50%;
+}
+
+.hero-bottom-img img {
+  max-width: 550px;
+  width: 100%;
+  position: absolute;
+  bottom: -85px;
+  right: 50%;
+}
+
+.hero-bottom-content,
+.hero-bottom-text {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.hero-bottom-text h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.hero-bottom-text p {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+/* ============================= */
+/*        RESPONSIVE PART        */
+/* ============================= */
+
+/* Large Tablet */
+@media (max-width: 1200px) {
+  .hero-bottom-img img {
+    max-width: 450px;
+    bottom: -60px;
+  }
+
+  .hero-bottom-text h2 {
+    font-size: 30px;
+  }
+
+  .hero-bottom-text p {
+    font-size: 16px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-bottom-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-bottom-img {
+    width: 100%;
+    position: relative;
+  }
+
+  .hero-bottom-img img {
+    position: relative;
+    right: auto;
+    bottom: -70px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .hero-bottom-content,
+  .hero-bottom-text {
+    padding: 0;
+  }
+
+  .hero-bottom-text h2 {
+    font-size: 26px;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .hero-bottom-section {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+
+  .hero-bottom-section::after {
+    border-radius: 20px;
+  }
+
+  .hero-bottom-img img {
+    max-width: 320px;
+    bottom: -60px;
+  }
+
+  .hero-bottom-text h2 {
+    font-size: 22px;
+  }
+
+  .hero-bottom-text p {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .hero-bottom-section {
+    padding: 35px 15px;
+  }
+
+  .hero-bottom-img img {
+    max-width: 260px;
+    bottom: -50px;
+  }
+
+  .hero-bottom-text h2 {
+    font-size: 18px;
+  }
+
+  .hero-bottom-text p {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .hero-bottom-text h2 {
+    font-size: 16px;
+  }
+
+  .hero-bottom-text p {
+    font-size: 13px;
+  }
+}

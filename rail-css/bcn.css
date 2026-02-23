@@ -1,0 +1,172 @@
+.bcn-rake-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bcn-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bcn-main-title {
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.bcn-main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  border-bottom: 2px solid #333;
+}
+
+.bcn-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 2rem;
+}
+
+.bcn-image-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bcn-img-card {
+  width: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bcn-img-card img {
+  width: 100%;
+  display: block;
+}
+
+/* স্লাইডার ডটস স্টাইল */
+.bcn-pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.bcn-pagination span {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bcn-pagination span.active {
+  background: #f7931e; /* অরেঞ্জ কালার */
+}
+
+.bcn-text-side {
+  flex: 1.2;
+}
+
+.bcn-text-side p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+/* --- BCN RAKE HANDLING RESPONSIVE --- */
+
+/* ট্যাবলেট এবং ছোট ল্যাপটপ (১০২৪px এর নিচে) */
+@media (max-width: 1024px) {
+  .bcn-container {
+    max-width: 95%;
+  }
+
+  .bcn-content-wrapper {
+    gap: 40px; /* গ্যাপ একটু কমালাম */
+  }
+
+  .bcn-text-side p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+}
+
+/* ট্যাবলেট এবং বড় ফোন (৯৯১px এর নিচে) */
+@media (max-width: 991px) {
+  .bcn-rake-section {
+    padding: 60px 0;
+  }
+
+  .bcn-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .bcn-image-side,
+  .bcn-text-side {
+    width: 100%;
+    flex: none;
+  }
+
+  .bcn-main-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .bcn-img-card {
+    max-width: 85%; /* ইমেজটা স্ক্রিনের সাথে সামঞ্জস্যপূর্ণ রাখতে */
+    margin: 0 auto;
+    border-radius: 25px; /* ছোট স্ক্রিনে রেডিয়াস একটু কমালাম */
+  }
+
+  .bcn-text-side p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+}
+
+/* ছোট ফোন (৪৮০px এর নিচে) */
+@media (max-width: 480px) {
+  .bcn-rake-section {
+    padding: 40px 0;
+  }
+
+  .bcn-main-title {
+    font-size: 20px;
+  }
+
+  .bcn-main-title::after {
+    width: 100px; /* আন্ডারলাইনটা ছোট করলাম */
+  }
+
+  .bcn-text-side p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .bcn-img-card {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+
+  .bcn-pagination span {
+    width: 10px;
+    height: 10px;
+  }
+}

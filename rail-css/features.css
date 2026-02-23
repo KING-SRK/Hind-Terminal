@@ -1,0 +1,169 @@
+.features-section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.features-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.features-main-title {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  color: #333;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.features-main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  border-bottom: 2px solid #333;
+}
+
+.features-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.features-list-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.feature-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.feature-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.features-image-side {
+  flex: 1;
+  text-align: center;
+}
+
+.features-image-side img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- SALIENT FEATURES RESPONSIVE --- */
+
+@media (max-width: 1200px) {
+  .features-container {
+    max-width: 100%;
+  }
+
+  .features-main-title {
+    font-size: 30px;
+  }
+
+  .feature-card p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .features-section {
+    padding: 60px 0;
+  }
+
+  .features-content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .features-list-side,
+  .features-image-side {
+    width: 100%;
+    flex: none;
+  }
+
+  .features-list-side {
+    order: 1;
+  }
+
+  .features-image-side {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .features-main-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .feature-card {
+    padding: 20px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section {
+    padding: 40px 0;
+  }
+
+  .features-main-title {
+    font-size: 20px;
+  }
+
+  .features-main-title::after {
+    width: 120px;
+  }
+
+  .feature-icon {
+    width: 45px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .features-container {
+    padding: 0 15px;
+  }
+}

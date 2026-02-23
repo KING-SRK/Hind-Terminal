@@ -1,0 +1,181 @@
+.warehousing-section {
+  width: 100%;
+  padding-top: 100px;
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.warehousing-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.warehousing-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.warehousing-title {
+  flex: 1;
+}
+
+.warehousing-title h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.warehousing-text {
+  flex: 1.2;
+}
+
+.warehousing-text p {
+  font-size: 20px;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* Scroll Button Styling */
+.scroll-action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.scroll-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f7931e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-action:hover .scroll-icon {
+  transform: translateY(5px);
+}
+
+.scroll-action span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.img-section {
+  width: 100%;
+  height: auto;
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/warehouse/image_1.png")
+    no-repeat center top;
+  background-size: contain;
+  background-position: center;
+  background-color: #fff;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* --- WAREHOUSING & DISTRIBUTION RESPONSIVE --- */
+
+@media (max-width: 1024px) {
+  .warehousing-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .warehousing-title h2 {
+    font-size: 38px;
+  }
+
+  .img-section {
+    min-height: 400px;
+    margin-right: 0; /* ১০২৪ পিক্সেল স্ক্রিনে মার্জিন ০ রাখা ভালো */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .warehousing-section {
+    padding-top: 60px;
+  }
+
+  .warehousing-content {
+    flex-direction: column; /* টাইটেল উপরে আর টেক্সট নিচে আসবে */
+    gap: 30px;
+    text-align: center; /* মোবাইলে লেখাগুলো মাঝখানে আনলে ভালো লাগে */
+  }
+
+  .warehousing-title,
+  .warehousing-text {
+    width: 100%;
+    flex: none;
+  }
+
+  .warehousing-title h2 {
+    font-size: 32px;
+  }
+
+  .warehousing-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .scroll-action {
+    justify-content: center; /* স্ক্রল বাটনটা মাঝখানে নিয়ে আসা হলো */
+  }
+
+  .img-section {
+    min-height: 350px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-section {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .warehousing-section {
+    padding-top: 40px;
+  }
+
+  .warehousing-title h2 {
+    font-size: 26px;
+  }
+
+  .warehousing-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .img-section {
+    min-height: 150px;
+  }
+
+  .scroll-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .scroll-action span {
+    font-size: 14px;
+  }
+}

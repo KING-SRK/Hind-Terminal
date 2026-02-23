@@ -1,0 +1,140 @@
+.cfs-section {
+  width: 100%;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/rail_service/Image_3.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0 0 0;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.cfs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cfs-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.cfs-left-space {
+  flex: 1;
+}
+
+.cfs-right-grid {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.cfs-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.cfs-icon {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.cfs-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.cfs-card p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.cfs-bottom-title {
+  width: 100%;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.cfs-bottom-title h1 {
+  font-size: 80px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .cfs-bottom-title h1 {
+    font-size: 50px;
+  }
+}
+
+/* --- Responsive Fixes --- */
+
+/* ট্যাবলেট ভিউ (৭৬৮px থেকে ৯৯১px পর্যন্ত) */
+@media (max-width: 991px) {
+  .cfs-section {
+    padding: 40px 0 20px 0;
+  }
+
+  .cfs-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cfs-left-space {
+    display: none;
+  }
+
+  .cfs-right-grid {
+    grid-template-columns: repeat(2, 1fr); /* ট্যাবলেটে পাশাপাশি ২টো থাকবে */
+    width: 100%;
+    gap: 20px;
+  }
+
+  .cfs-bottom-title h1 {
+    font-size: 45px;
+    line-height: 1.2;
+  }
+}
+
+/* মোবাইল ভিউ (৭৬৭px এর নিচে) */
+@media (max-width: 767px) {
+  .cfs-right-grid {
+    grid-template-columns: 1fr; /* ফোনে ১টা করে কার্ড আসবে */
+    gap: 15px;
+  }
+
+  .cfs-card {
+    min-height: auto;
+    padding: 25px 15px;
+  }
+
+  .cfs-bottom-title h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  .cfs-container {
+    padding: 0 15px;
+  }
+
+  .cfs-card p {
+    font-size: 15px;
+  }
+}

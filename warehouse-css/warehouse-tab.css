@@ -1,0 +1,306 @@
+.gt-main-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/warehouse/BG.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px; /* ছবির মতো সুন্দর রাউন্ডেড শেপ */
+  padding: 60px 50px;
+  color: white;
+  font-family: "Segoe UI", Arial, sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Curvy Line Pattern (ইমেজের ভেতরের সাদা লাইনগুলোর জন্য) */
+.gt-line-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png"); /* এটা একটা ডামি প্যাটার্ন, তুমি চাইলে SVG লাইন ব্যবহার করতে পারো */
+  opacity: 0.1;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.gt-inner-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+/* Top Nav Styling */
+.gt-top-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.gt-nav-item {
+  font-size: 24px;
+  line-height: 1.3;
+  color: #ffffff;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  max-width: 450px;
+  padding-bottom: 15px;
+  padding-right: 82px;
+  cursor: pointer;
+}
+
+/* Content Grid */
+.gt-layout-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.gt-text-side {
+  flex: 1.2;
+}
+
+.gt-headline {
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.gt-bullet-points {
+  list-style: none;
+  padding: 0;
+}
+
+.gt-bullet-points li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.gt-bullet-points li::before {
+  content: "•";
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+/* Image Card Styling */
+.gt-image-side {
+  flex: 1;
+}
+
+.gt-img-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.gt-img-card img {
+  width: 100%;
+  display: block;
+  border-radius: 30px;
+}
+
+.gt-slider-wrapper {
+  padding: 60px 0 0 0; /* ডটের জন্য নিচে অনেকটা জায়গা ছেড়েছি */
+  width: 100%;
+  overflow: hidden;
+}
+
+.gt-swiper-instance {
+  padding: 20px 0 60px 0 !important; /* স্লাইডারের ভেতরে প্যাডিং */
+}
+
+.gt-slide-card {
+  background: #fff;
+  border-radius: 40px; /* একদম ওই ছবির মতো রাউন্ডেড */
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.gt-img-wrapper img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  border: 7px solid #fff;
+  border-radius: 45px;
+}
+
+/* কার্ডের নিচের সেই সাদা লেবেলটা */
+.gt-card-title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  padding: 12px 35px;
+  border-radius: 25px 25px 0 0;
+  width: 80%;
+  text-align: center;
+}
+
+.gt-card-title span {
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* ডট বা Pagination স্টাইলিং */
+.gt-pagination {
+  position: absolute;
+  bottom: 0px !important;
+  text-align: center;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #fff !important; /* তোমার অরেঞ্জ ব্যাকগ্রাউন্ডে সাদা ডট ভালো লাগবে */
+  opacity: 0.5;
+  margin: 0 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff7323 !important; /* একটিভ ডট অরেঞ্জ */
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Navigation Container */
+.gt-slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px; /* স্লাইডারের থেকে একটু ওপরে */
+}
+
+/* Common Arrow Style */
+.gt-prev,
+.gt-next {
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.3); /* হালকা সাদাটে আভা */
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* Hover Effect */
+.gt-prev:hover,
+.gt-next:hover {
+  background: #ffffff;
+  color: #ff7323; /* তোমার অরেঞ্জ থিম কালার */
+}
+
+/* Font Awesome Icon Size */
+.gt-prev i,
+.gt-next i {
+  font-size: 18px;
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 1024px) {
+  .gt-main-wrapper {
+    padding: 40px 30px; /* প্যাডিং একটু কমালাম */
+  }
+  .gt-headline {
+    font-size: 28px; /* ট্যাবে হেডিং সাইজ */
+  }
+  .gt-nav-item {
+    font-size: 18px; /* ট্যাবে মেনু ফন্ট সাইজ */
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gt-main-wrapper {
+    border-radius: 20px; /* ছোট স্ক্রিনে রেডিয়াস কমালে ভালো লাগে */
+    padding: 30px 20px;
+  }
+
+  /* Top Nav Grid - মোবাইলে একটার নিচে একটা আসবে */
+  .gt-top-nav {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .gt-nav-item {
+    font-size: 16px;
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center; /* মোবাইলে লেখাগুলো মাঝখানে থাকবে */
+  }
+
+  /* Layout Grid - ফ্লেক্স কলাম করে দিচ্ছি */
+  .gt-layout-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .gt-headline {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .gt-bullet-points li {
+    font-size: 15px; /* ছোট স্ক্রিনে ফন্ট সাইজ অ্যাডজাস্ট */
+  }
+
+  /* ইমেজ সাইড মোবাইলে টেক্সটের নিচে আসবে */
+  .gt-image-side {
+    width: 100%;
+  }
+
+  /* স্লাইডার কার্ডের ইমেজ হাইট অ্যাডজাস্ট */
+  .gt-img-wrapper img {
+    height: 250px; /* মোবাইলে ইমেজ যেন খুব বেশি বড় না হয় */
+  }
+
+  .gt-card-title {
+    width: 90%;
+    padding: 8px 15px;
+  }
+
+  .gt-card-title span {
+    font-size: 13px;
+    white-space: normal; /* মোবাইলে লেখা বেশি হলে নিচে নামবে */
+  }
+
+  /* অ্যারোগুলো মোবাইলে একটু ছোট করলে ভালো দেখাবে */
+  .gt-prev,
+  .gt-next {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gt-headline {
+    font-size: 20px;
+  }
+  .gt-main-wrapper {
+    padding: 20px 15px;
+  }
+}

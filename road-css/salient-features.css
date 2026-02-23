@@ -1,0 +1,262 @@
+.salient-features-section {
+  width: 100%;
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/service_panvel/BG_Lines.png");
+  background-size: cover;
+  margin: 48px 0;
+}
+
+.salient-features-container {
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/Services-ROAD-TRANSPORTATION/Vector_4.png");
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30%;
+}
+
+.salient-features-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat";
+  text-align: center;
+  width: 10%;
+}
+
+.salient-features-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.salient-features-left {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  gap: 70px;
+  padding: 0 12px;
+  flex-direction: column;
+}
+
+.salient-features-left-card {
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(to right, #f6aa1c, #f63a0a);
+}
+
+.salient-features-left-card::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #f63a0a;
+}
+
+.salient-features-left-1 {
+  transform: translateX(-190px);
+}
+
+.salient-features-left-2 {
+  transform: translateX(-330px);
+}
+
+.salient-features-left-3 {
+  transform: translateX(-330px);
+}
+
+.salient-features-left-4 {
+  transform: translateX(-190px);
+}
+
+.salient-features-right {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 70px;
+  padding: 0 12px;
+  flex-direction: column;
+}
+
+.salient-features-right-card {
+  padding: 10px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(to right, #f6aa1c, #f63a0a);
+}
+
+.salient-features-right-card::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #f63a0a;
+}
+
+.salient-features-right-1 {
+  transform: translateX(190px);
+}
+
+.salient-features-right-2 {
+  transform: translateX(330px);
+}
+
+.salient-features-right-3 {
+  transform: translateX(330px);
+}
+
+.salient-features-right-4 {
+  transform: translateX(190px);
+}
+
+.salient-features-card-inner {
+  background: #e6e6e6;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 360px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.salientSwiper {
+  padding: 20px;
+}
+
+.salient-features-section-mobile {
+  width: 100%;
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/service_panvel/BG_Lines.png");
+  background-size: cover;
+  padding-bottom: 100px;
+  margin: 3rem 0;
+  display: none;
+}
+
+.salient-features-container-mobile {
+  background: url("https://projects.synergynexa.com/hind-terminal/assets/images/Services-ROAD-TRANSPORTATION/Vector_4.png");
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.salient-mobile-card {
+  background: #e6e6e6;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+@media (max-width: 1500px) {
+  .salient-features-title {
+    width: 25%;
+  }
+
+  .salient-features-left {
+    gap: 20px;
+  }
+
+  .salient-features-right {
+    gap: 20px;
+  }
+
+  .salient-features-left-1 {
+    transform: translateX(-140px);
+  }
+
+  .salient-features-left-2 {
+    transform: translateX(-240px);
+  }
+
+  .salient-features-left-3 {
+    transform: translateX(-240px);
+  }
+
+  .salient-features-left-4 {
+    transform: translateX(-140px);
+  }
+
+  .salient-features-right-1 {
+    transform: translateX(140px);
+  }
+
+  .salient-features-right-2 {
+    transform: translateX(240px);
+  }
+
+  .salient-features-right-3 {
+    transform: translateX(240px);
+  }
+
+  .salient-features-right-4 {
+    transform: translateX(140px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .salient-features-section {
+    display: none;
+  }
+
+  .salient-features-section-mobile {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .salient-features-container-mobile {
+    height: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .salient-features-title {
+    width: 40%;
+  }
+}
+
+@media (max-width: 430px) {
+  .salient-features-title {
+    width: 85%;
+  }
+}

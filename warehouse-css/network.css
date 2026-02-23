@@ -1,0 +1,161 @@
+.gt-network-section {
+  width: 100%;
+  min-height: 600px;
+  padding: 80px 50px;
+  background-color: #fff;
+  /* ব্যাকগ্রাউন্ডে সেই সাদা ওয়েভি লাইন ইমেজ */
+  background-image: url("https://projects.synergynexa.com/hind-terminal/assets/images/warehouse/BG_Lines.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.gt-network-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Left Content */
+.gt-network-content {
+  flex: 1;
+}
+
+.gt-network-title {
+  color: #231f20;
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.gt-network-desc {
+  color: #000000;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.gt-location-list {
+  list-style: none;
+  padding: 0;
+}
+
+.gt-location-list li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.gt-location-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Right Map */
+.gt-map-wrapper {
+  flex: 1.2;
+  text-align: right;
+}
+
+.gt-india-map {
+  width: 100%;
+  max-width: 650px;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+}
+
+/* --- Mobile & Tablet Responsive Adjustments --- */
+
+@media (max-width: 1024px) {
+  .gt-network-section {
+    padding: 60px 30px; /* প্যাডিং একটু কমানো হলো */
+  }
+  .gt-network-title {
+    font-size: 28px; /* ট্যাবে টাইটেল একটু ছোট */
+  }
+  .gt-india-map {
+    max-width: 500px; /* ম্যাপের সাইজ অ্যাডজাস্ট */
+  }
+}
+
+@media (max-width: 768px) {
+  .gt-network-section {
+    padding: 40px 20px;
+    background-attachment: scroll; /* মোবাইলে ব্যাকগ্রাউন্ড ফিক্সড থাকলে অনেক সময় সমস্যা হয় */
+  }
+
+  .gt-network-container {
+    flex-direction: column !important; /* একটার নিচে একটা আসবে */
+    gap: 40px;
+    text-align: center;
+  }
+
+  .gt-network-content,
+  .gt-map-wrapper {
+    width: 100%;
+    flex: none;
+  }
+
+  .gt-network-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .gt-network-desc {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  /* লিস্ট আইটেমগুলো মোবাইলে মাঝখানে আনার জন্য */
+  .gt-location-list {
+    display: inline-block; /* কন্টেন্ট অনুযায়ী উইডথ নেবে */
+    text-align: left; /* পয়েন্টগুলো যাতে আবার বাঁদিকে অ্যালাইন থাকে */
+    margin: 0 auto;
+  }
+
+  .gt-location-list li {
+    font-size: 15px;
+    padding-left: 25px;
+  }
+
+  .gt-location-list li::before {
+    display: block; /* ডটগুলো মোবাইলেও দেখা যাবে */
+    left: 5px;
+  }
+
+  .gt-map-wrapper {
+    text-align: center;
+    order: 2; /* ম্যাপ নিচে থাকবে */
+  }
+
+  .gt-network-content {
+    order: 1; /* লেখা উপরে থাকবে */
+  }
+
+  .gt-india-map {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .gt-network-title {
+    font-size: 20px;
+  }
+  .gt-network-section {
+    padding: 30px 15px;
+  }
+}
